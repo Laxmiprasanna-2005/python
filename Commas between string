@@ -1,0 +1,6 @@
+
+x = "apple"
+def commaez(x):
+   return x.replace('',',')[1:-1]
+print(commaez(x))
+
