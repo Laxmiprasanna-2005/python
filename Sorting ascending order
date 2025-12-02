@@ -1,0 +1,48 @@
+
+
+def is_sorted(l):
+    x=l[:]
+    x.sort()
+    if l==x:
+        return True
+    else:
+        return False
+l=list(input("Enter List Items").split())
+print(is_sorted(l))
+
+Expected Output
+Enter List Items 2 4 1 6 7 8 9
+False
+2. Write a function called has duplicates  that takes a list and returns True if there is any element that appears more than once. It should not modify the original list
+ 
+class Solution:
+def has_duplicate(self, list1):
+new_value = set(list1)
+
+if len(new_value) == len(list1):
+return 'false'
+else:
+return 'true'
+
+nums = [1, 2, 3,1,2]
+obj = Solution()
+print(obj.has_duplicate(nums))
+
+OUTPUT
+
+True
+
+i). Write a function called remove duplicates that takes a list and returns a new list with only the unique elements from the original. Hint: they don’t have to be in the same order
+def Remove(duplicate):
+    final_list = []
+    for num in duplicate:
+        if num not in final_list:
+            final_list.append(num)
+    return final_list
+     
+# Driver Code
+duplicate = [2, 4, 10, 20, 5, 2, 20, 4]
+print(Remove(duplicate))
+
+Expected Output
+[2, 4, 10, 20, 5]
